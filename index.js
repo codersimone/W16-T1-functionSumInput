@@ -1,6 +1,5 @@
 function sumInput() {
     let arr = [];
-    let sum = 0;
     let value = getValue();
     while (parseInt(value, 10)) {
         arr.push(parseInt(value, 10));
@@ -8,6 +7,10 @@ function sumInput() {
         console.log(value,' ',typeof(value));
     }
     alert(arr.sort());
+    let result = arr.reduce(function(sum, elem) {
+        return sum + elem;
+    }, 0);
+    alert(result);
 }
 sumInput();
 
