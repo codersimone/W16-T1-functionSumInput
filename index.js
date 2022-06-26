@@ -7,8 +7,8 @@ function sumInput() {
         console.log(value,' ',typeof(value));
     }
     alert(arr.sort());
-    let result = arr.reduce(function(sum, elem) {
-        return sum + elem;
+    let result = arr.reduce(function(sum, current) {
+        return sum + current;
     }, 0);
     alert(result);
 }
